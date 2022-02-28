@@ -12,7 +12,7 @@ def initialize_classes():
     enchanter = ["Janna", "Karma", "Lulu", "Nami", "Seraphine", "Sona", "Soraka", "Taric", "Yuumi", "Ivern"]
 
     # Fighters are not tanky enough to be classified as tanks, and they do a decent amount of damage
-    fighter = ["Gnar", "Graves", "Camille", "Hecarim", "Jarvan IV", "Lee Sin", "Olaf", "Pantheon", "Rek'Sai", "Renekton", "Vi", "Warwick", "Wukong", "Xin Zhao", "Aatrox", "Darius", "Garen", "Illaoi", "Mordekaiser", "Nasus", "Sett", "Trundle", "Udyr", "Urgot", "Yorick", "Sylas", "Viego", "Irelia", "Gwen", "Kled", "Riven", ]
+    fighter = ["Gnar", "Graves", "Camille", "Hecarim", "Jarvan IV", "Lee Sin", "Olaf", "Pantheon", "Rek'Sai", "Renekton", "Vi", "Warwick", "Wukong", "Xin Zhao", "Aatrox", "Darius", "Garen", "Illaoi", "Mordekaiser", "Nasus", "Sett", "Trundle", "Udyr", "Urgot", "Yorick", "Sylas", "Viego", "Irelia", "Gwen", "Kled", "Riven"]
     # For Graves, since his life steal is so strong I decided to classify him as a fighter. Should this ever be nerfed, he may be moved to the slayer position.
     # For Irelia and Gwen, they both play in a way that can be described as a fighter playstyle or a slayer playstyle. I have decided to place them in fighter; however, should it feel awkward in terms of team composition, they may be moved to the slayer position.
 
