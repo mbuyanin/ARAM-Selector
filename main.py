@@ -8,7 +8,7 @@ def initialize_classes():
     # Controllers are people that primarily focus on ccing in an aram match.
     controller = ["Fiddlesticks", "Kennen", "Bard", "Blitzcrank", "Rakan", "Thresh", "Twisted Fate", "Veigar", "Amumu", "Leona", "Rell", "Renata Glasc", "Morgana"]
 
-    # Enchanters are usually there to either buff a team in general, pocket someone to carry, or heal a team.
+    # Enchanters are there to either buff a team in general, pocket someone to carry, or heal a team.
     enchanter = ["Janna", "Karma", "Lulu", "Nami", "Seraphine", "Sona", "Soraka", "Taric", "Yuumi", "Ivern"]
 
     # Fighters are not tanky enough to be classified as tanks, and they do a decent amount of damage
@@ -123,7 +123,7 @@ def selection_process(blue_side, red_side, mirror, controller, enchanter, fighte
     red_side["Tanks"] = random.sample(tank, team_composition["Tanks"])
 
 def display(blue_side, red_side):
-    blue_composition = "```~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/TEAM ONE/\n"
+    blue_composition = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/TEAM ONE/\n"
     for y in blue_side:
         for x in blue_side[y]:
             blue_composition += x + "\n"
@@ -132,7 +132,7 @@ def display(blue_side, red_side):
     for y in red_side:
         for x in red_side[y]:
             red_composition += x + "\n"
-    print(blue_composition + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/TEAM TWO/\n" + red_composition + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~```")
+    print(blue_composition + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n/TEAM TWO/\n" + red_composition + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 def main():
     class_controller, class_enchanter, class_fighter, class_mage, class_poke_mage, class_marksman, class_slayer, class_tank = initialize_classes()
